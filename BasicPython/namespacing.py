@@ -11,10 +11,24 @@
 # print("id of v2 is : ", id(v2))
 
 
-user_name = input("Enter you name : ")
-print(user_name)
+# user_name = input("Enter you name : ")
+# print(user_name)
 
-number = input("Enter a Number : ")
-sum = int(number)+10
-print(sum)
-print(type(sum))
+# number = input("Enter a Number : ")
+# sum = int(number)+10
+# print(sum)
+# print(type(sum))
+
+
+def printMessage():
+    print("here is the message...!")
+
+
+message = None
+message = printMessage
+print(id(message))
+print(id(printMessage))
+print(message())
+print(printMessage())
+
+printMessage()
